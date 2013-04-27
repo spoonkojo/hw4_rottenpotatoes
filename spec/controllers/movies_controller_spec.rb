@@ -7,6 +7,32 @@ describe MoviesController do
     @movie = [mock('movie1')]
   end
 
+  describe 'show movie' do
+    it 'should render show view' do
+      Movie.stub(:find)
+      get :show, {:id => 1}
+      response.should render_template 'show'
+    end
+  end
+
+  describe 'showing movies list' do
+    it 'should render index view' do
+      Movie.stub(:find_all_by_rating);
+      get :index
+      response.should render_template 'index'
+    end
+    it 'should redirect to movies path with sort params went sort is set' do
+      Movie.stub(:all_ratings)
+      get :index, {:sort => :release_date, :ratings => :R}
+      response.should redirect_to(movies_path({:sort => :release_date, :ratings => :R}))
+    end
+    it 'should redirect to movies path with rating params when ratings are set' do
+      Movie.stub(:all_ratings)
+      get :index, {:ratings => :R}
+      response.should redirect_to(movies_path({:ratings => :R}))
+    end
+  end
+
   describe 'updating movie info' do
     before :each do
       movie_id = 5

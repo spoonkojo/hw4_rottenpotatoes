@@ -19,39 +19,39 @@ RSpec:
     - 1
     - 
     - 1
-    - 0
-    - 0
+    - 1
+    - 1
     - 
     - 
     - 
     - 1
-    - 0
-    - 0
+    - 3
+    - 3
     - 
     - 0
     - 
-    - 0
+    - 1
     - 
-    - 0
-    - 0
+    - 3
+    - 3
     - 
-    - 0
-    - 0
-    - 
-    - 
-    - 0
-    - 0
-    - 0
-    - 0
+    - 3
+    - 6
     - 
     - 
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 3
+    - 1
+    - 1
+    - 1
     - 
-    - 0
+    - 
+    - 2
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
     - 
     - 
     - 1
@@ -99,10 +99,10 @@ RSpec:
     /Users/spoon/Dropbox/WebServer/heroku/edx169.1/hw4_rottenpotatoes/app/models/movie.rb: 
     - 1
     - 1
-    - 0
+    - 1
     - 
     - 
-  :created_at: 2013-04-27 12:39:08.389740 -06:00
+  :created_at: 2013-04-27 13:22:15.559606 -06:00
 Cucumber Features: 
   :original_result: 
     /Users/spoon/Dropbox/WebServer/heroku/edx169.1/hw4_rottenpotatoes/app/controllers/application_controller.rb: 
